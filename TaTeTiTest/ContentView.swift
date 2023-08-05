@@ -31,7 +31,7 @@ struct ContentView: View {
                             .background(Color.white)
                         
                             .onTapGesture {
-                                juego.posicion(row, column)
+                                juego.posicion(row: row, column: column)
                             }
                     }
                 }
@@ -39,6 +39,10 @@ struct ContentView: View {
         }
         .background(Color.black)
         .padding(10)
+        .alert(isPresented: $juego.PartidaFinalizada){
+            Alert(title: Text(juego.mensajeFinal),
+                  dismissButton: .default(Text("Juego Nuevo")){juego.resetBoard()})
+        }
     }
 }
 

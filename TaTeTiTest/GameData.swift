@@ -11,6 +11,10 @@ class Juego: ObservableObject{
     
     @Published var board = [[celda]]()
     @Published var turnos = Tile.equis
+    @Published var puntosEquis = 0
+    @Published var puntosZeros = 0
+    @Published var PartidaFinalizada = false
+    @Published var mensajeFinal = "Empate"
     
         
         init(){
@@ -21,19 +25,34 @@ class Juego: ObservableObject{
             return
         }
         board[row][column].tile = turnos == Tile.equis ? Tile.equis : Tile.zero
-    }
-        func resetBoard(){
-            var tableroNuevo =  [[celda]]()
-            
-            for _ in (0...2){
-                
-                var row = [celda]()
-                
-                for _ in 0...2{
-                    row.append(celda(tile: Tile.empty))
-                }
-                tableroNuevo.append(row)
+        
+        
+        if(partidaTerminada()){
+            if (turnos == Tile.equis){
+                puntosEquis += 1
+            }else {
+                puntosZeros += 1
             }
-            board = tableroNuevo
+            let winner = turnos == Tile.equis ? "Cruz" : "Zeros"
+            mensajeFinal = winner + "Gano!"
+            PartidaFinalizada = true
+        }else{
+            turnos = turnos == Tile.equis ? Tile.zero : Tile.equis
         }
+    }
+    func partidaTerminada()->Bool{return false}
+    func resetBoard(){
+        var tableroNuevo =  [[celda]]()
+        
+        for _ in (0...2){
+            
+            var row = [celda]()
+            
+            for _ in 0...2{
+                row.append(celda(tile: Tile.empty))
+            }
+            tableroNuevo.append(row)
+        }
+        board = tableroNuevo
+    }
 }
