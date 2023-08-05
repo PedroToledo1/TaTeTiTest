@@ -17,6 +17,7 @@
 		4A4290002A7DA54E00695D16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A428FFF2A7DA54E00695D16 /* Assets.xcassets */; };
 		4A4290032A7DA54E00695D16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4290022A7DA54E00695D16 /* Preview Assets.xcassets */; };
 		4AEEF96F2A7DAAE60057114E /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEF96E2A7DAAE60057114E /* Class.swift */; };
+		4AEEF9722A7E1E930057114E /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEF9702A7E12C30057114E /* GameData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		4A428FFF2A7DA54E00695D16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A4290022A7DA54E00695D16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AEEF96E2A7DAAE60057114E /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		4AEEF9702A7E12C30057114E /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				4A428FE92A7DA54D00695D16 /* TaTeTiTestApp.swift */,
 				4A428FEB2A7DA54D00695D16 /* ContentView.swift */,
 				4AEEF96E2A7DAAE60057114E /* Class.swift */,
+				4AEEF9702A7E12C30057114E /* GameData.swift */,
 				4A428FED2A7DA54E00695D16 /* Assets.xcassets */,
 				4A428FEF2A7DA54E00695D16 /* Preview Content */,
 			);
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AEEF96F2A7DAAE60057114E /* Class.swift in Sources */,
+				4AEEF9722A7E1E930057114E /* GameData.swift in Sources */,
 				4A428FEC2A7DA54D00695D16 /* ContentView.swift in Sources */,
 				4A428FEA2A7DA54D00695D16 /* TaTeTiTestApp.swift in Sources */,
 			);
