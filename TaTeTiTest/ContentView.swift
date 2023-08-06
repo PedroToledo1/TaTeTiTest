@@ -15,6 +15,11 @@ struct ContentView: View {
         
         let borderSize = CGFloat(5)
         
+        Text(juego.turnosTexto())
+            .font(.title)
+            .bold()
+            .padding()
+        
         VStack (spacing: borderSize){
             ForEach(0...2, id: \.self){
                 row in
@@ -43,6 +48,8 @@ struct ContentView: View {
             Alert(title: Text(juego.mensajeFinal),
                   dismissButton: .default(Text("Juego Nuevo")){juego.resetBoard()})
         }
+        Button(action: {juego.PartidaFinalizada = true}, label: {Text("Reiniciar")})
+            .buttonStyle(.bordered)
     }
 }
 

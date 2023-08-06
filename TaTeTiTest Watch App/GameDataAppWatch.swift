@@ -1,5 +1,5 @@
 //
-//  GameData.swift
+//  GameDataAppWatch.swift
 //  TaTeTiTest Watch App
 //
 //  Created by Pedro Toledo on 5/8/23.

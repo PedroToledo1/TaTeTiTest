@@ -18,6 +18,8 @@
 		4A4290032A7DA54E00695D16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A4290022A7DA54E00695D16 /* Preview Assets.xcassets */; };
 		4AEEF96F2A7DAAE60057114E /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEF96E2A7DAAE60057114E /* Class.swift */; };
 		4AEEF9722A7E1E930057114E /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEF9702A7E12C30057114E /* GameData.swift */; };
+		4AEEF9742A7F14DA0057114E /* GameDataAppWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEF9732A7F14DA0057114E /* GameDataAppWatch.swift */; };
+		4AEEF9762A7F15020057114E /* classAppWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEF9752A7F15020057114E /* classAppWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		4A4290022A7DA54E00695D16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4AEEF96E2A7DAAE60057114E /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
 		4AEEF9702A7E12C30057114E /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		4AEEF9732A7F14DA0057114E /* GameDataAppWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDataAppWatch.swift; sourceTree = "<group>"; };
+		4AEEF9752A7F15020057114E /* classAppWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classAppWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				4A428FFB2A7DA54E00695D16 /* TaTeTiTestApp.swift */,
+				4AEEF9732A7F14DA0057114E /* GameDataAppWatch.swift */,
+				4AEEF9752A7F15020057114E /* classAppWatch.swift */,
 				4A428FFD2A7DA54E00695D16 /* ContentView.swift */,
 				4A428FFF2A7DA54E00695D16 /* Assets.xcassets */,
 				4A4290012A7DA54E00695D16 /* Preview Content */,
@@ -248,6 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEEF9762A7F15020057114E /* classAppWatch.swift in Sources */,
+				4AEEF9742A7F14DA0057114E /* GameDataAppWatch.swift in Sources */,
 				4A428FFE2A7DA54E00695D16 /* ContentView.swift in Sources */,
 				4A428FFC2A7DA54E00695D16 /* TaTeTiTestApp.swift in Sources */,
 			);
